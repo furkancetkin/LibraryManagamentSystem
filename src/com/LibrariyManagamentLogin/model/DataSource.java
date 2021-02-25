@@ -34,8 +34,8 @@ public class DataSource {
     public static final String TABLE_EMANET="emanet";
     public static final String SUTUN_EMANET_NO="emanet_no";
     public static final String SUTUN_EMANET_ISBN="isbn";
-    public static final String SUTUN_UYE_NO="uye_no";
-    public static final String SUTUN_KUTUPHANE_NO="kutuphane_no";
+    public static final String SUTUN_EMANTE_UYE_NO="uye_no";
+    public static final String SUTUN_EMANET_KUTUPHANE_NO="kutuphane_no";
     public static final String SUTUN_EMANET_TARIHI="emanet_tarihi";
     public static final String SUTUN_TESLIM_TARIHI="teslim_tarihi";
 
@@ -49,6 +49,26 @@ public class DataSource {
     public static final String SUTUN_KITAP_ADI="kitap_adi";
     public static final String SUTUN_YAYIN_TARIHI="yayin_tarihi";
     public static final String SUTUN_SAYFA_SAYISI="sayfa_sayisi";
+
+    //KUTUPHANE
+    public static final String TABLE_KUTUPHANE="kutuphane";
+    public static final String SUTUN_KUTUPHANE_NO="kutuphane_no";
+    public static final String SUTUN_KUTUPHANE_ADRES_NO="adres_no";
+    public static final String SUTUN_ACIKLAMA="aciklama";
+
+    //UYELER
+    public static final String TABLE_UYELER="uyeler";
+    public static final String SUTUN_UYE_NO="uye_no";
+    public static final String SUTUN_UYE_ADI="uye_adi";
+    public static final String SUTUN_UYE_SOYADI="uye_soyadi";
+    public static final String SUTUN_CINSIYET="cinsiyet";
+    public static final String SUTUN_UYELER_ADRES_NO="adres_no";
+    public static final String SUTUN_TELEFON="telefon";
+
+    //YAZARLAR
+    public static final String TABLE_YAZARLAR="yazarlar";
+    public static final String SUTUN_YAZAR_ADI="yazar_adi";
+    public static final String SUTUN_YAZAR_SOYADI="yazar_soyadi";
 
 
     public static final int SIRALA_ARTAN=1;
