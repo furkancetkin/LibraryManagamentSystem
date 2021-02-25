@@ -1,6 +1,8 @@
 package com.LibrariyManagamentLogin.model;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 public class DataSource {
@@ -75,8 +77,38 @@ public class DataSource {
     public static final int SIRALA_AZALAN=2;
 
 
-    private Connection connection = null ;
-    private Statement statement = null;
+    private static Connection connection = null ;
+    private static Statement statement = null;
+
+    public static boolean veritabaniAc(){
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            System.out.println("Driver Hatası");
+            return false;
+        }
+
+        try {
+            connection= DriverManager.getConnection(url,user,password);
+
+        } catch (SQLException throwables) {
+            System.out.println("Bağlantı hatası");
+            return false;
+        }
+
+        return true;
+
+    }
+
+    public static void veritabaniKapat(){
+
+        try {
+            connection.close();
+        } catch (SQLException throwables) {
+            System.out.println("Veritabanı kapatılamadı");
+        }
+    }
 
 
 }
