@@ -1,0 +1,12 @@
+.loginBack{
+    -fx-background-image: url("view/libraryWalpaper.jpg");
+    -fx-background-size: 100%;
+}
+
+.loginBtn{
+    -fx-background-color:  #2191BF;
+}
+
+.loginBtn:hover{
+    -fx-background-color: #74b9ff;
+}
