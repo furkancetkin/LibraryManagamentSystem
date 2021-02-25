@@ -1,4 +1,4 @@
-module LibraryManagamentSystem {
+module LibraryManagamentSystem.view {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.graphics;
