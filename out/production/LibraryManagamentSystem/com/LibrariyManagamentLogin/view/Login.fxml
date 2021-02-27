@@ -70,12 +70,12 @@
                         <Font name="SansSerif Regular" size="27.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="userName" prefHeight="40.0" prefWidth="212.0" promptText="Kullanıcı Adı" style="-fx-background-color: #1B2935; -fx-border-color: #314252;">
+                  <TextField fx:id="userName" prefHeight="40.0" prefWidth="212.0" promptText="Kullanıcı Adı" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText" stylesheets="@still.css">
                      <VBox.margin>
                         <Insets bottom="10.0" left="60.0" right="60.0" top="20.0" />
                      </VBox.margin>
                   </TextField>
-                  <PasswordField fx:id="password" prefHeight="40.0" prefWidth="212.0" promptText="Şifre" style="-fx-border-color: #314252; -fx-background-color: #1B2935;">
+                  <PasswordField fx:id="password" prefHeight="40.0" prefWidth="212.0" promptText="Şifre" style="-fx-border-color: #314252; -fx-background-color: #1B2935;" styleClass="beyazText" stylesheets="@still.css">
                      <VBox.margin>
                         <Insets bottom="10.0" left="60.0" right="60.0" />
                      </VBox.margin>

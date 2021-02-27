@@ -1,5 +1,5 @@
 .loginBack{
-    -fx-background-image: url("view/libraryWalpaper.jpg");
+    -fx-background-image: url("libraryWalpaper.jpg");
     -fx-background-size: 100%;
 }
 
@@ -9,4 +9,8 @@
 
 .loginBtn:hover{
     -fx-background-color: #74b9ff;
+}
+
+.girisText{
+    -fx-text-fill:  white;
 }
