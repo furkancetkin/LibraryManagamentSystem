@@ -19,7 +19,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("view/Login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("view/kategoriGuncelleDialog.fxml"));
         primaryStage.setTitle("AIBU Kütüphanesi");
         primaryStage.setScene(new Scene(root, 875, 538));
         primaryStage.show();

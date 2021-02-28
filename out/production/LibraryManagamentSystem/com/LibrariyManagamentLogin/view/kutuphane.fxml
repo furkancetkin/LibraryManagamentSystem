@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="kutuphanePencere" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #0d1b28;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.LibrariyManagamentLogin.KutuphaneController">
+   <children>
+      <MenuBar>
+         <menus>
+            <Menu mnemonicParsing="false" text="Listeler">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Kitaplar" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Yazarlar" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Üyeler" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Emanetler" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Adresler" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Kütüphaneler" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <TableView layoutX="-1.0" layoutY="140.0" prefHeight="460.0" prefWidth="900.0">
+         <columns>
+            <TableColumn prefWidth="200.0" text="Kütüphane No" />
+            <TableColumn prefWidth="200.0" text="Adres No" />
+            <TableColumn prefWidth="500.0" text="Açıklama" />
+         </columns>
+      </TableView>
+      <Button layoutX="140.0" layoutY="66.0" mnemonicParsing="false" onAction="#kutuphaneEkleBtn" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #2191BF;" text="Ekle" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="271.0" layoutY="65.0" mnemonicParsing="false" onAction="#kutuphaneSilBtn" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #2191BF;" text="Sil" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="399.0" layoutY="65.0" mnemonicParsing="false" onAction="#kutuphaneGuncelleBtn" prefHeight="30.0" prefWidth="95.0" style="-fx-background-color: #2191BF;" text="Güncelle" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="kutuphaneAra" layoutX="683.0" layoutY="72.0" prefHeight="27.0" prefWidth="147.0" promptText="Ara" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText" />
+      <ChoiceBox fx:id="kutuphaneAramaSecenekleri" layoutX="606.0" layoutY="72.0" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText" />
+      <Label layoutX="683.0" layoutY="12.0" text="Kütüphane" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

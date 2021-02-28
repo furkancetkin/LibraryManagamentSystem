@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="emanetPencere" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #0d1b28;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.LibrariyManagamentLogin.EmanetController">
+<AnchorPane fx:id="teslimEdilenlerPencere" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #0d1b28;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.LibrariyManagamentLogin.TeslimEdilenlerController">
    <children>
       <MenuBar>
          <menus>
@@ -44,37 +44,17 @@
             <TableColumn prefWidth="150.0" text="Teslim Tarihi" />
          </columns>
       </TableView>
-      <Button layoutX="233.0" layoutY="66.0" mnemonicParsing="false" onAction="#emanetEkleBtn" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #2191BF;" text="Ekle" textFill="WHITE">
+      <Button layoutX="275.0" layoutY="66.0" mnemonicParsing="false" onAction="#emanetListesineGeriAlBtn" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: #2191BF;" text="Emanet Listesine Geri Al" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="341.0" layoutY="66.0" mnemonicParsing="false" onAction="#emanetSilBtn" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #2191BF;" text="Sil" textFill="WHITE">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Button>
-      <Button layoutX="450.0" layoutY="66.0" mnemonicParsing="false" onAction="#emanetGuncelleBtn" prefHeight="30.0" prefWidth="95.0" style="-fx-background-color: #2191BF;" text="Güncelle" textFill="WHITE">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Button>
-      <TextField fx:id="emanetAra" layoutX="683.0" layoutY="72.0" prefHeight="27.0" prefWidth="147.0" promptText="Ara" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText" />
-      <ChoiceBox fx:id="emanetAramaSecenekleri" layoutX="606.0" layoutY="72.0" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText" />
-      <Label layoutX="683.0" layoutY="12.0" text="Emanet" textFill="WHITE">
+      <TextField fx:id="teslimAra" layoutX="683.0" layoutY="72.0" prefHeight="27.0" prefWidth="147.0" promptText="Ara" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText" />
+      <ChoiceBox fx:id="teslimAramaSecenekleri" layoutX="606.0" layoutY="72.0" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText" />
+      <Label layoutX="683.0" layoutY="12.0" text="Teslim Edilenler" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Button layoutX="35.0" layoutY="33.0" mnemonicParsing="false" onAction="#teslimEdilenlerBtn" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #2191BF;" text="Teslim Edilenler" textFill="WHITE">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Button>
-      <Button layoutX="60.0" layoutY="86.0" mnemonicParsing="false" onAction="#teslimEtBtn" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #2191BF;" text="Teslim Et" textFill="WHITE">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Button>
    </children>
 </AnchorPane>

@@ -22,6 +22,16 @@ public class EmanetController {
     private ChoiceBox<?> emanetAramaSecenekleri;
 
     @FXML
+    void teslimEdilenlerBtn(ActionEvent event) {
+
+    }
+
+    @FXML
+    void teslimEtBtn(ActionEvent event) {
+
+    }
+
+    @FXML
     void emanetEkleBtn(ActionEvent event) {
 
     }
@@ -41,6 +51,7 @@ public class EmanetController {
         alert.getDialogPane().setHeaderText("Emanet Silindi.");
         alert.showAndWait();
     }
+
 
     //EKLEME PENCERESİ ÖGELERİ
     @FXML
