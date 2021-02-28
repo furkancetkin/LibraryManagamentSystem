@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0d1b28;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.LibrariyManagamentLogin.KitapEkleController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0d1b28;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.LibrariyManagamentLogin.KitaplarController">
    <children>
       <VBox prefHeight="400.0" prefWidth="189.0">
          <children>
@@ -74,29 +74,29 @@
       </VBox>
       <VBox layoutX="189.0" prefHeight="400.0" prefWidth="412.0">
          <children>
-            <TextField fx:id="txtBarkodNo" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
+            <TextField fx:id="txtBarkodNoGuncelle" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
                <VBox.margin>
                   <Insets bottom="40.0" left="50.0" right="50.0" top="50.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="txtKitapAdi" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
+            <TextField fx:id="txtKitapAdiGuncelle" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
                <VBox.margin>
                   <Insets bottom="40.0" left="50.0" right="50.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="txtSayfaSayisi" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
+            <TextField fx:id="txtSayfaSayisiGuncelle" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
                <VBox.margin>
                   <Insets bottom="40.0" left="50.0" right="50.0" />
                </VBox.margin>
             </TextField>
-            <DatePicker fx:id="dateYayinTarihi">
+            <DatePicker fx:id="dateYayinTarihiGuncelle">
                <VBox.margin>
                   <Insets bottom="15.0" left="50.0" />
                </VBox.margin>
             </DatePicker>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Button mnemonicParsing="false" onAction="#btnKitapKapagi" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" text="+" textFill="WHITE">
+                  <Button mnemonicParsing="false" onAction="#btnKitapKapagiGuncelle" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" text="+" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -104,7 +104,7 @@
                         <Insets left="50.0" top="20.0" />
                      </HBox.margin>
                   </Button>
-                  <ImageView fx:id="imageview" fitHeight="100.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imageviewGuncelle" fitHeight="100.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
                      <HBox.margin>
                         <Insets left="50.0" />
                      </HBox.margin>

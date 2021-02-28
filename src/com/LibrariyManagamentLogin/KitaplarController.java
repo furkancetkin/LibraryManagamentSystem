@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
@@ -16,6 +17,7 @@ import java.util.ResourceBundle;
 
 public class KitaplarController {
 
+    //ANA PENCERE OGELERİ
     @FXML
     private AnchorPane kitaplarPencere;
 
@@ -26,6 +28,7 @@ public class KitaplarController {
     private ChoiceBox<?> aramaSecenekleri;
 
     public void initialize(URL url, ResourceBundle resourceBundle){}
+
 
     @FXML
     public void kitapEkleBtn(ActionEvent event) throws IOException {
@@ -60,5 +63,48 @@ public class KitaplarController {
         alert.getDialogPane().setHeaderText("Kitap Silindi.");
         alert.showAndWait();
     }
+
+    //EKLEME PENCERESİ ÖGELERİ
+    @FXML
+    private TextField txtBarkodNo;
+
+    @FXML
+    private TextField txtKitapAdi;
+
+    @FXML
+    private TextField txtSayfaSayisi;
+
+    @FXML
+    private DatePicker dateYayinTarihi;
+
+    @FXML
+    private ImageView imageview;
+
+    @FXML
+    void btnKitapKapagi(ActionEvent event) {
+
+    }
+
+    //GÜNCELLE PENCERESİ ÖGELERİ
+    @FXML
+    private TextField txtBarkodNoGuncelle;
+
+    @FXML
+    private TextField txtKitapAdiGuncelle;
+
+    @FXML
+    private TextField txtSayfaSayisiGuncelle;
+
+    @FXML
+    private DatePicker dateYayinTarihiGuncelle;
+
+    @FXML
+    private ImageView imageviewGuncelle;
+
+    @FXML
+    void btnKitapKapagiGuncelle(ActionEvent event) {
+
+    }
+
 
 }
