@@ -2,18 +2,16 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="454.0" prefWidth="601.0" style="-fx-background-color: #0d1b28;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.LibrariyManagamentLogin.UyelerController">
+<AnchorPane prefHeight="595.0" prefWidth="601.0" style="-fx-background-color: #0d1b28;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.LibrariyManagamentLogin.AdreslerController">
    <children>
-      <VBox prefHeight="400.0" prefWidth="189.0">
+      <VBox prefHeight="595.0" prefWidth="189.0">
          <children>
-            <Label text="Üye Güncelle" textFill="WHITE">
+            <Label text="Adres Güncelle" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
@@ -21,7 +19,7 @@
                   <Insets left="30.0" top="30.0" />
                </VBox.margin>
             </Label>
-            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Üye No" textFill="WHITE">
+            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Adres No" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -32,7 +30,7 @@
                   <Insets left="20.0" right="20.0" />
                </padding>
             </Label>
-            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Adı" textFill="WHITE">
+            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Bina No" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -43,7 +41,7 @@
                   <Insets bottom="40.0" left="30.0" />
                </VBox.margin>
             </Label>
-            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Soyadı" textFill="WHITE">
+            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Cadde" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -54,7 +52,7 @@
                   <Insets bottom="40.0" left="30.0" />
                </VBox.margin>
             </Label>
-            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Cinsiyet" textFill="WHITE">
+            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Mahalle" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -65,7 +63,7 @@
                   <Insets bottom="40.0" left="30.0" />
                </VBox.margin>
             </Label>
-            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Adres No" textFill="WHITE">
+            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Şehir" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -76,7 +74,18 @@
                   <Insets bottom="40.0" left="30.0" />
                </VBox.margin>
             </Label>
-            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Telefon No" textFill="WHITE">
+            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Posta Kodu" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="40.0" left="30.0" />
+               </VBox.margin>
+            </Label>
+            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Ülke" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -91,40 +100,37 @@
       </VBox>
       <VBox layoutX="189.0" prefHeight="412.0" prefWidth="412.0">
          <children>
-            <TextField fx:id="txtUyeNoGuncelle" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
+            <TextField fx:id="txtAdresNoGuncelle" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
                <VBox.margin>
                   <Insets bottom="40.0" left="50.0" right="50.0" top="105.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="txtAdiGuncelle" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
+            <TextField fx:id="txtBinaNoGuncelle" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
                <VBox.margin>
                   <Insets bottom="40.0" left="50.0" right="50.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="txtSoyadiGuncelle" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
+            <TextField fx:id="txtCaddeGuncelle" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
                <VBox.margin>
                   <Insets bottom="40.0" left="50.0" right="50.0" />
                </VBox.margin>
             </TextField>
-            <HBox prefHeight="100.0" prefWidth="200.0">
-               <children>
-                  <RadioButton fx:id="radioErkekGuncelle" mnemonicParsing="false" text="Erkek" textFill="WHITE">
-                     <HBox.margin>
-                        <Insets bottom="40.0" left="50.0" right="50.0" />
-                     </HBox.margin>
-                  </RadioButton>
-                  <RadioButton fx:id="radioKizGuncelle" mnemonicParsing="false" text="Kız" textFill="WHITE" />
-               </children>
+            <TextField fx:id="txtMahalleGuncelle" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
                <VBox.margin>
-                  <Insets />
-               </VBox.margin>
-            </HBox>
-            <TextField fx:id="txtAdresNoGuncelle" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
-               <VBox.margin>
-                  <Insets bottom="40.0" left="50.0" right="50.0" top="10.0" />
+                  <Insets bottom="40.0" left="50.0" right="50.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="txtTelefonNoGuncelle" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
+            <TextField fx:id="txtSehirGuncelle" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
+               <VBox.margin>
+                  <Insets bottom="40.0" left="50.0" right="50.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtPostaKoduGuncelle" prefHeight="138.0" prefWidth="312.0" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
+               <VBox.margin>
+                  <Insets bottom="40.0" left="50.0" right="50.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtUlkeGuncelle" prefHeight="138.0" prefWidth="312.0" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
                <VBox.margin>
                   <Insets left="50.0" right="50.0" />
                </VBox.margin>

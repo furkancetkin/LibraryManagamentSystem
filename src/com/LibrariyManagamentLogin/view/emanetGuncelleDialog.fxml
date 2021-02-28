@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0d1b28;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.LibrariyManagamentLogin.KitaplarController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0d1b28;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.LibrariyManagamentLogin.EmanetController">
    <children>
       <VBox prefHeight="400.0" prefWidth="189.0">
          <children>
-            <Label text="Kitap Güncelle" textFill="WHITE">
+            <Label text="Emanet Güncelle" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
@@ -23,7 +20,7 @@
                   <Insets left="30.0" top="30.0" />
                </VBox.margin>
             </Label>
-            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Barkod No" textFill="WHITE">
+            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Emanet No" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -34,7 +31,7 @@
                   <Insets left="20.0" right="20.0" />
                </padding>
             </Label>
-            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Kitap Adı" textFill="WHITE">
+            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="İsbn" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -45,7 +42,7 @@
                   <Insets bottom="40.0" left="30.0" />
                </VBox.margin>
             </Label>
-            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Sayfa Sayısı" textFill="WHITE">
+            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Üye No" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -56,7 +53,7 @@
                   <Insets bottom="40.0" left="30.0" />
                </VBox.margin>
             </Label>
-            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Yayın Tarihi" textFill="WHITE">
+            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Kütüphane No" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -67,7 +64,7 @@
                   <Insets bottom="40.0" left="30.0" />
                </VBox.margin>
             </Label>
-            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Kitap Kapağı" textFill="WHITE">
+            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Emanet Tarihi" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -75,50 +72,54 @@
                   <Insets left="20.0" right="20.0" />
                </padding>
                <VBox.margin>
-                  <Insets left="30.0" />
+                  <Insets bottom="40.0" left="30.0" />
+               </VBox.margin>
+            </Label>
+            <Label style="-fx-border-color: #2191bf; -fx-background-color: #0D1B28; -fx-border-radius: 5;" text="Teslim Tarihi" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="50.0" left="30.0" />
                </VBox.margin>
             </Label>
          </children>
       </VBox>
       <VBox layoutX="189.0" prefHeight="400.0" prefWidth="412.0">
          <children>
-            <TextField fx:id="txtBarkodNoGuncelle" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
+            <TextField fx:id="txtEmanetNoGuncelle" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
                <VBox.margin>
                   <Insets bottom="40.0" left="50.0" right="50.0" top="105.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="txtKitapAdiGuncelle" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
+            <TextField fx:id="txtEmanetIsbnNoGuncelle" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
                <VBox.margin>
                   <Insets bottom="40.0" left="50.0" right="50.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="txtSayfaSayisiGuncelle" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
+            <TextField fx:id="txtEmanetUyeNoGuncelle" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
                <VBox.margin>
                   <Insets bottom="40.0" left="50.0" right="50.0" />
                </VBox.margin>
             </TextField>
-            <DatePicker fx:id="dateYayinTarihiGuncelle">
+            <TextField fx:id="txtEmanetKutuphaneNoGuncelle" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText">
                <VBox.margin>
-                  <Insets bottom="15.0" left="50.0" />
+                  <Insets bottom="40.0" left="50.0" right="50.0" />
+               </VBox.margin>
+            </TextField>
+            <DatePicker fx:id="dateEmanetTarihiGuncelle">
+               <VBox.margin>
+                  <Insets bottom="40.0" left="50.0" />
                </VBox.margin>
             </DatePicker>
-            <HBox prefHeight="100.0" prefWidth="200.0">
-               <children>
-                  <Button mnemonicParsing="false" onAction="#btnKitapKapagiGuncelle" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" text="+" textFill="WHITE">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets left="50.0" top="20.0" />
-                     </HBox.margin>
-                  </Button>
-                  <ImageView fx:id="imageviewGuncelle" fitHeight="100.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
-                     <HBox.margin>
-                        <Insets left="50.0" />
-                     </HBox.margin>
-                  </ImageView>
-               </children>
-            </HBox>
+            <DatePicker fx:id="dateEmanetTeslimTarihiGuncelle">
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+            </DatePicker>
          </children>
       </VBox>
    </children>
