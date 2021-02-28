@@ -12,8 +12,8 @@ public class Main extends Application {
     @Override
     public void init() throws Exception {
 
-        DataSource.veritabaniAc();
-        DataSource.veritabaniKapat();
+        //DataSource.veritabaniAc();
+        //DataSource.veritabaniKapat();
         super.init();
     }
 

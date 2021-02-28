@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="yoneticiPencere" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #0d1b28;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.LibrariyManagamentLogin.YoneticiController">
+<AnchorPane fx:id="kitaplarPencere" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #0d1b28;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.LibrariyManagamentLogin.KitaplarController">
    <children>
       <MenuBar>
         <menus>
@@ -31,7 +31,7 @@
           </Menu>
         </menus>
       </MenuBar>
-      <TableView layoutX="-1.0" layoutY="159.0" prefHeight="441.0" prefWidth="900.0">
+      <TableView layoutX="-1.0" layoutY="140.0" prefHeight="460.0" prefWidth="900.0">
         <columns>
           <TableColumn prefWidth="180.0" text="Barkod No" />
           <TableColumn prefWidth="180.0" text="Kitap Adı" />
@@ -40,22 +40,22 @@
             <TableColumn prefWidth="180.0" text="Kitap Kapağı" />
         </columns>
       </TableView>
-      <Button layoutX="143.0" layoutY="75.0" mnemonicParsing="false" onAction="#kitapEkleBtn" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #2191BF;" text="Ekle" textFill="WHITE">
+      <Button layoutX="140.0" layoutY="66.0" mnemonicParsing="false" onAction="#kitapEkleBtn" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #2191BF;" text="Ekle" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="274.0" layoutY="75.0" mnemonicParsing="false" onAction="#kitapSilBtn" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #2191BF;" text="Sil" textFill="WHITE">
+      <Button layoutX="271.0" layoutY="65.0" mnemonicParsing="false" onAction="#kitapSilBtn" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #2191BF;" text="Sil" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="402.0" layoutY="75.0" mnemonicParsing="false" onAction="#kitapGuncelleBtn" prefHeight="30.0" prefWidth="95.0" style="-fx-background-color: #2191BF;" text="Güncelle" textFill="WHITE">
+      <Button layoutX="399.0" layoutY="65.0" mnemonicParsing="false" onAction="#kitapGuncelleBtn" prefHeight="30.0" prefWidth="95.0" style="-fx-background-color: #2191BF;" text="Güncelle" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <TextField fx:id="kitapAra" layoutX="686.0" layoutY="81.0" prefHeight="27.0" prefWidth="147.0" promptText="Ara" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" />
-      <ChoiceBox fx:id="aramaSecenekleri" layoutX="609.0" layoutY="81.0" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" />
+      <TextField fx:id="kitapAra" layoutX="683.0" layoutY="72.0" prefHeight="27.0" prefWidth="147.0" promptText="Ara" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText" />
+      <ChoiceBox fx:id="kitapAramaSecenekleri" layoutX="606.0" layoutY="72.0" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText" />
    </children>
 </AnchorPane>

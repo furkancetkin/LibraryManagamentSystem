@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="uyelerPencere" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #0d1b28;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.LibrariyManagamentLogin.UyelerController">
+   <children>
+      <MenuBar>
+         <menus>
+            <Menu mnemonicParsing="false" text="Listeler">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Kitaplar" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Yazarlar" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Üyeler" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Emanetler" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Adresler" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <TableView layoutY="140.0" prefHeight="460.0" prefWidth="900.0">
+        <columns>
+          <TableColumn prefWidth="150.0" text="Üye No" />
+          <TableColumn prefWidth="150.0" text="Adı" />
+            <TableColumn prefWidth="150.0" text="Soyadı" />
+            <TableColumn prefWidth="150.0" text="Cinsiyet" />
+            <TableColumn prefWidth="150.0" text="Adres No" />
+            <TableColumn prefWidth="150.0" text="Telefon" />
+        </columns>
+      </TableView>
+      <Button layoutX="140.0" layoutY="66.0" mnemonicParsing="false" onAction="#uyeEkleBtn" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #2191BF;" text="Ekle" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="271.0" layoutY="66.0" mnemonicParsing="false" onAction="#uyeSilBtn" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #2191BF;" text="Sil" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="399.0" layoutY="66.0" mnemonicParsing="false" onAction="#uyeGuncelleBtn" prefHeight="30.0" prefWidth="95.0" style="-fx-background-color: #2191BF;" text="Güncelle" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="uyeAra" layoutX="683.0" layoutY="72.0" prefHeight="27.0" prefWidth="147.0" promptText="Ara" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText" />
+      <ChoiceBox fx:id="uyeAramaSecenekleri" layoutX="606.0" layoutY="72.0" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: #1B2935; -fx-border-color: #314252;" styleClass="beyazText" />
+   </children>
+</AnchorPane>

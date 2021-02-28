@@ -14,10 +14,10 @@ import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
-public class YoneticiController {
+public class KitaplarController {
 
     @FXML
-    private AnchorPane yoneticiPencere;
+    private AnchorPane kitaplarPencere;
 
     @FXML
     private TextField kitapAra;
@@ -52,7 +52,7 @@ public class YoneticiController {
 
     @FXML
     void kitapSilBtn(ActionEvent event) {
-        Stage stage = (Stage) yoneticiPencere.getScene().getWindow();
+        Stage stage = (Stage) kitaplarPencere.getScene().getWindow();
         Alert.AlertType type = Alert.AlertType.INFORMATION;
         Alert alert = new Alert(type, "");
         alert.initModality(Modality.APPLICATION_MODAL);

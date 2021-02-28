@@ -40,7 +40,7 @@ public class Controller implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         /*loginbtn.setOnAction(actionEvent -> {
             try {
-                Parent rootNode = FXMLLoader.load(getClass().getResource("yonetici.fxml"));
+                Parent rootNode = FXMLLoader.load(getClass().getResource("kitaplar.fxml"));
                 Stage stage = new Stage();
                 Scene scene = new Scene(rootNode);
                 stage.setScene(scene);
